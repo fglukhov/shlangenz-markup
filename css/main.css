@@ -3243,7 +3243,7 @@ blockquote .author {
   right:16px;
 }
 
-.socials div {
+.socials>div {
   float:left !important;
   margin:0 10px 0 0 !important;
 }
