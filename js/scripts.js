@@ -124,9 +124,13 @@ $(document).ready(function () {
     $(".cv-form .form-submit").uniform();
   }
     
-  $(".main-slider").mainSlider();
+  $(".main-slider").each(function () {
+    $(this).mainSlider();
+  });
   
-  $(".project-slider").projectSlider();
+  $(".project-slider").each(function () {
+    $(this).projectSlider();
+  });
   
   $(".vacancy-item").last().addClass("vacancy-item-last");
   
