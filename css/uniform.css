@@ -212,7 +212,7 @@ div.uploader {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    background:#2d7594;
+    background:#468dab;
     color:#fff;
     height: 34px;
     line-height: 34px;
@@ -252,6 +252,10 @@ div.uploader {
     cursor: default;
     width: 100%;
     height: 100%; }
+  div.uploader .action:hover {
+    background-color:#2d7594;
+  }
+  
   div.uploader.active span.action {
     background-position: right -465px; }
   div.uploader.hover, div.uploader.focus {
