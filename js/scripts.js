@@ -277,6 +277,7 @@ $(document).ready(function () {
     
     submenu.hover(function () {
       submenuHover = 1;
+      trigger.addClass("mm-top-hover");
     },function () {
       submenuHover = 0;
     });
