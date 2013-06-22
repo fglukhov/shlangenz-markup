@@ -1,7 +1,8 @@
 ﻿#test {
-  position:absolute;
-  z-index:2000;
-  color:red;
+  position:fixed;
+  z-index:2500;
+  color:#000;
+  background-color:red;
 }
 
 @font-face {
@@ -187,11 +188,14 @@ h3 {
   height:211px;
   overflow:hidden;
   background:#2c3135 url(../images/header-bg.jpg) center 0 no-repeat;
+  position:relative;
+  z-index:30;
 }
 
 .header .header-bottom {
   position:relative;
-  z-index:1000;
+  z-index:10;
+  background-color:#252a2e;
 }
 
 .header a,
@@ -331,7 +335,13 @@ h3 {
   background:url(../images/hr-menu.png) 0 top repeat-x;
   margin:17px 0 0 0;
   height:51px;
+  position:relative;
 }
+
+.main-menu .section-wrapper {
+  z-index:10;
+}
+
 
 .m-menu {
   font-size:16px;
@@ -420,6 +430,10 @@ h3 {
   min-height:35px;
   padding:0 0 0 0;
   background:#23292e url(../images/sm-bg.png) 0 0 repeat-x;
+  position:relative;
+  z-index:10;
+  margin-top:-35px;
+  opacity:0;
 }
 
 .main-submenu .cont {
@@ -3316,6 +3330,50 @@ blockquote .author {
 .socials>div {
   float:left !important;
   margin:0 10px 0 0 !important;
+}
+
+/* Fixed main menu */
+
+.menu-fixed {
+  position:fixed;
+  top:0;
+  z-index:30;
+  width:100%;
+  background:#2c3135;
+  margin:0;
+}
+
+.menu-fixed .m-menu {
+  position:relative;
+  z-index:30;
+}
+
+
+.fadeout {
+  background:#2c3135 url(../images/header-bg.jpg) center bottom no-repeat;
+  width:100%;
+  position:absolute;
+  top:2px;
+  z-index:1;
+}
+
+.menu-fixed .fadout {
+  position:fixed;
+  top:0;
+  z-index:25;
+}
+
+.header-bottom-fixed {
+  position:fixed;
+  z-index:29 !important;
+  width:100%;
+  behavior: url(PIE.htc);
+}
+
+.header-bottom-fixed .main-submenu {
+  position:fixed;
+  width:100%;
+  z-index:29 !imporant;
 }
 
 
