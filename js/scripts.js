@@ -318,6 +318,7 @@ $(document).ready(function () {
         }
         
         if (!triggerHover && !submenuHover && !animation && submenu.css("display") == "block") {
+          trigger.removeClass("mm-top-hover");
           submenu.stop();
           animation = 1;
           submenu.animate({
