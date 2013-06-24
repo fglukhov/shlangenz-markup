@@ -81,18 +81,18 @@ $(document).ready(function () {
   });
 
   $("input:text").each(function () {
-    $(this).wrap("<div class='input-wrapper'></div>").addClass("initial");
-    var initVal = $(this).val();
+    var input = $(this);
+    $(this).parents(".form-item").find(".placeholder").click(function() {
+      input.focus();
+    });
+    $(this).wrap("<div class='input-wrapper'></div>");
     $(this).focus(function () {
-      if ($(this).val() == initVal) {
-        $(this).removeClass("initial").val("");
-      }
+      $(this).parents(".form-item").find(".placeholder").hide();
     });
     $(this).blur(function () {
       if ($(this).val() == "") {
-        $(this).addClass("initial").val(initVal);
+        $(this).parents(".form-item").find(".placeholder").show();
       }
-      
     });
   });
 

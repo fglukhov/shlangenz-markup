@@ -2082,6 +2082,13 @@ ul.params .dt {
   float:left;
 }
 
+.common-form .placeholder {
+  display:block;
+  position:absolute;
+  left:8px;
+  top:8px;
+  color:#788087;
+}
 
 .common-form .form-text, .common-form .form-textarea {
   font-size:13px;
@@ -2097,7 +2104,7 @@ ul.params .dt {
 }
 
 .common-form .initial {
-  color:#788087;
+  
 }
 
 .common-form h3,
@@ -2403,6 +2410,11 @@ ul.params .dt {
 
 .callback-form .form-text {
   width:505px;
+}
+
+.callback-form .placeholder {
+  top:14px;
+  font-size:13px;
 }
 
 .warning-block h3 {
