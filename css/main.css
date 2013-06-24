@@ -108,6 +108,7 @@ h3 {
 .section-wrapper,
 .header,
 .body,
+.main-projects,
 .main-materials a,
 .materials a,
 .content,
@@ -138,6 +139,7 @@ h3 {
 .project-slider:after,
 .header:after,
 .body:after,
+.main-projects:after,
 .main-materials a:after,
 .materials a:after,
 .content:after,
@@ -618,6 +620,10 @@ h3 {
 }
 
 /* Main page projects */
+
+.main-projects {
+  padding:0 0 27px 0;
+}
 
 .main-projects .item {
   margin:0 20px 0 0;
@@ -2103,8 +2109,38 @@ ul.params .dt {
   position:relative;
 }
 
-.common-form .initial {
-  
+.common-form label.error {
+  background-color:#ee2f3d;
+  color:#fff;
+  position:absolute;
+  left:100%;
+  top:0;
+  margin-left:8px;
+  width:130px;
+  font-size: 11px;
+  padding: 4px 9px;
+  line-height: 14px;
+  z-index:28;
+}
+
+.common-form label.error:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  width: 5px;
+  height: 10px;
+  margin-top: -5px;
+  background: url(../images/order-error.png);
+}
+
+.common-form .input-wrapper-error {
+  background-position:0 -180px !important;
+}
+
+.common-form input.error {
+  background-position:right -214px !important;
 }
 
 .common-form h3,
@@ -2158,10 +2194,10 @@ ul.params .dt {
 }
 
 
-.order-form #order-phone,
-.order-form #order-fax,
-.order-form #order-email,
-.order-form #order-site {
+.order-form #order_phone,
+.order-form #order_fax,
+.order-form #order_email,
+.order-form #order_site {
   width:294px;
 }
 

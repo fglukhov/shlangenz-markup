@@ -34,6 +34,45 @@ $(window).scroll(function () {
 
 $(document).ready(function () {
 
+  $("input:text").each(function () {
+    var input = $(this);
+    $(this).parents(".form-item").find(".placeholder").click(function() {
+      input.focus();
+    });
+    $(this).wrap("<div class='input-wrapper'></div>");
+    $(this).focus(function () {
+      $(this).parents(".form-item").find(".placeholder").hide();
+    });
+    $(this).blur(function () {
+      if ($(this).val() == "") {
+        $(this).parents(".form-item").find(".placeholder").show();
+      }
+    });
+  });
+
+  /* Order form validation */
+  
+  $(".order-form form").validate({
+    rules: {
+			order_email: {
+				required: true,
+				email: true
+			}
+		},
+    messages: {
+      order_comp_name: "Введите название компании",
+      order_email: "Введите правильный адрес",
+      order_phone: "Введите номер телефона",
+      order_request_number: "Введите номер запроса"
+    },
+    errorPlacement: function(error, element) {
+      element.parents(".input-wrapper").addClass("input-wrapper-error");
+      error.insertAfter(element);
+    }
+  });
+  
+  
+
   if ($(".common-form").length) {
     formMakeup();
   }
@@ -75,26 +114,12 @@ $(document).ready(function () {
   $(".form-hint").hover(function () {
     $(this).find(".form-hint-window").show().css("left",$(this).find(".form-hint-trigger").position().left + 5).css("top",$(this).find(".form-hint-trigger").position().top - 15);
     $(".form-item").css("z-index",1);
-    $(this).parents(".form-item").css("z-index",1000);
+    $(this).parents(".form-item").css("z-index",20);
   },function () {
     $(this).find(".form-hint-window").hide();
   });
 
-  $("input:text").each(function () {
-    var input = $(this);
-    $(this).parents(".form-item").find(".placeholder").click(function() {
-      input.focus();
-    });
-    $(this).wrap("<div class='input-wrapper'></div>");
-    $(this).focus(function () {
-      $(this).parents(".form-item").find(".placeholder").hide();
-    });
-    $(this).blur(function () {
-      if ($(this).val() == "") {
-        $(this).parents(".form-item").find(".placeholder").show();
-      }
-    });
-  });
+  
 
   if ($(".common-form").length) {
     $(".common-form input, .common-form select, .common-form textarea").uniform();
