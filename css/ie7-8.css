@@ -1,7 +1,7 @@
 ﻿.main-rnd-block .cont-wrapper {
   position:relative;
   background-color:#1e2326;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -12,7 +12,7 @@
 .main-rnd-block .cont {
   position:relative;
   background-color:#252a2e;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -45,7 +45,7 @@
 .rnd-block .cont-wrapper {
   position:relative;
   background-color:#dcddde;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -56,7 +56,7 @@
 .rnd-block .cont {
   position:relative;
   background-color:#f1f2f3;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;

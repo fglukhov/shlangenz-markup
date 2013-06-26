@@ -160,11 +160,6 @@ h3 {
   visibility:hidden;
 }
 
-.body {
-  position:relative;
-  z-index:1;
-}
-
 .ico {
   background-image:url(../images/sprite.png);
   background-repeat:no-repeat;
@@ -183,12 +178,11 @@ h3 {
 
 .header {
   color:#fff;
-  margin-bottom:46px;
-  position:relative;
+  padding-bottom:46px;
 }
 
 .header-home {
-  margin-bottom:0;
+  padding-bottom:0;
 }
 
 
@@ -542,7 +536,7 @@ h3 {
   height:250px;
   position:absolute;
   z-index:20;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1073,7 +1067,7 @@ h3 {
   width:1020px;
   height:300px;
   position:relative;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1185,6 +1179,7 @@ h3 {
 
 .single-col {
   width:1020px;
+  position:relative;
 }
 
 
@@ -1395,7 +1390,7 @@ h3 {
 }
 
 .send-cv-button {
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   position:relative;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1423,7 +1418,7 @@ h3 {
 }
 
 .popup {
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   position:absolute;
   z-index:2500;
   -webkit-border-radius: 4px;
@@ -1447,7 +1442,7 @@ h3 {
 }
 
 .cv-popup .button {
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   position:relative;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1493,7 +1488,7 @@ h3 {
     display: inline;
     overflow: hidden;
     cursor: pointer;
-    behavior: url(PIE.htc);
+    behavior: url(/PIE.htc);
     position:relative;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -1902,7 +1897,7 @@ ul.params .dt {
   height:250px;
   position:absolute;
   z-index:20;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -2351,7 +2346,7 @@ ul.params .dt {
   width:240px;
   height:18px;
   overflow:hidden;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -2393,7 +2388,7 @@ ul.params .dt {
   position:relative;
   height:42px;
   overflow:hidden;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -2889,7 +2884,7 @@ h3.confirm-message {
   height:323px;
   position:absolute;
   z-index:20;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -2956,7 +2951,7 @@ h3.confirm-message {
 }
 
 .content-pic img {
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3042,7 +3037,7 @@ h3.confirm-message {
 /* Contacts */
 
 .contacts-map {
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   width:1020px;
   height:394px;
   -webkit-border-radius: 4px;
@@ -3058,10 +3053,10 @@ h3.confirm-message {
 .contacts .address-block {
   background-color:#fff;
   position:absolute;
-  z-index:1500;
+  z-index:15;
   left:35px;
   top:35px;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3426,7 +3421,7 @@ blockquote .author {
   position:fixed;
   z-index:29 !important;
   width:100%;
-  behavior: url(PIE.htc);
+  behavior: url(/PIE.htc);
 }
 
 .header-bottom-fixed .main-submenu {

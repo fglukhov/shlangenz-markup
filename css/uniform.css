@@ -208,7 +208,7 @@ div.uploader {
   position: relative;
   overflow: hidden; }
   div.uploader span.action {
-    behavior: url(PIE.htc);
+    behavior: url(/PIE.htc);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
