@@ -160,6 +160,11 @@ h3 {
   visibility:hidden;
 }
 
+.body {
+  position:relative;
+  z-index:1;
+}
+
 .ico {
   background-image:url(../images/sprite.png);
   background-repeat:no-repeat;
@@ -179,6 +184,7 @@ h3 {
 .header {
   color:#fff;
   margin-bottom:46px;
+  position:relative;
 }
 
 .header-home {
@@ -188,7 +194,6 @@ h3 {
 
 .header-top {
   height:211px;
-  overflow:hidden;
   background:#2c3135 url(../images/header-bg.jpg) center 0 no-repeat;
   position:relative;
   z-index:30;
@@ -337,6 +342,7 @@ h3 {
   background:url(../images/hr-menu.png) 0 top repeat-x;
   margin:17px 0 0 0;
   height:51px;
+  overflow:hidden;
   position:relative;
 }
 
@@ -387,6 +393,7 @@ h3 {
 .footer .m-menu .act,
 .footer .m-menu li:hover {
   padding-top:16px;
+  margin-bottom:-1px;
 }
 
 .m-menu .act a,
@@ -513,7 +520,6 @@ h3 {
   color:#808994;
   margin:36px 0 12px 0;
 }
-
 
 /* Main slider */
 
@@ -646,6 +652,7 @@ h3 {
 
 .main-projects .cont-wrapper {
   width:180px;
+  height:343px;
 }
 
 .main-projects .pic {
@@ -703,17 +710,17 @@ h3 {
   position:relative;
 }
 
-.main-projects .params tr {
+.main-projects .params td {
   border-bottom:1px solid #41474f;
 }
 
-.main-projects .last {
+.main-projects .last td {
   border-bottom:none !important;
 }
 
 .main-projects .params .dt {
   color:#696c6f;
-  width:20px;
+  width:35px;
 }
 
 .main-projects .params td {
@@ -736,7 +743,7 @@ h3 {
   color:#fff;
 }
 
-.main-projects .item:hover .params tr {
+.main-projects .item:hover .params td {
   border-color:#6d9fb5 !important;
 }
 
@@ -1653,6 +1660,8 @@ h3 {
   width:137px;
   height:63px;
   padding:10px 12px 10px 0;
+  font-size:13px;
+  line-height:18px;
 }
 
 .catalogue-thumbs .pic .pic-mask {
@@ -2590,7 +2599,7 @@ h3.confirm-message {
 }
 
 .projects-list .item {
-  padding:18px 0 10px 0;
+  padding:18px 0 20px 0;
   border-top:1px solid #e7e8e9;
 }
 
@@ -2889,8 +2898,8 @@ h3.confirm-message {
 .project-slider .lister {
   position:absolute;
   z-index:21;
-  left:22px;
-  bottom:12px;
+  left:9px;
+  bottom:7px;
 }
 
 .project-slider .lister .item {
@@ -2904,6 +2913,7 @@ h3.confirm-message {
   color:#c0e0f0;
   font-family:'PTSansBold';
   font-size:14px;
+  line-height:17px;
   text-align:center;
   padding-top:6px;
   cursor:pointer;
@@ -2977,6 +2987,7 @@ h3.confirm-message {
 
 .partners-list {
   margin:0 -10px 0 0;
+  width:810px;
 }
 
 .partners-list a.item {
@@ -3000,7 +3011,6 @@ h3.confirm-message {
 .partners-list .no-link {
   cursor:default;
 }
-
 
 .partners-list .pic {
   height:178px;

@@ -396,51 +396,55 @@ $(document).ready(function () {
     slides.hide();
     slides.eq(0).show().addClass("slide-act");
     
-    for (i=1;i<=sliderSize;i++) {
-      lister.append("<div class='item'>" + i + "</div>")
-    }
-    
-    var listerItems = lister.children(".item");
-    
-    listerItems.eq(0).addClass("act");
-    
     sliderMakeup();
     
-    listerItems.on("click",function () {
-      if (!$(this).hasClass("act")) {
-        listerItems.removeClass("act");
-        $(this).addClass("act");
-        slides.fadeOut(250).removeClass("slide-act");
-        slides.eq($(this).index()).fadeIn(250).addClass("slide-act");
-        sliderMakeup();
+    if (sliderSize > 1) {
+    
+      for (i=1;i<=sliderSize;i++) {
+        lister.append("<div class='item'>" + i + "</div>")
       }
-    });
-    
-    listerItems.bind("mouseover",function () {
-      $(this).click();
-    });
-    
-    var play = 1;
-    
-    slider.bind("mouseover",function () {
-      play = 0;
-    });
-    slider.bind("mouseout",function () {
-      play = 1;
-    });
-    
-    if (play) {
-      var t = setInterval(function () {
-        if (play) {
-          if (lister.find(".act").index() < sliderSize-1) {
-            lister.find(".act").next(".item").click();
-          } else {
-            listerItems.eq(0).click();
-          }
+      
+      var listerItems = lister.children(".item");
+      
+      listerItems.eq(0).addClass("act");
+      
+      
+      
+      listerItems.on("click",function () {
+        if (!$(this).hasClass("act")) {
+          listerItems.removeClass("act");
+          $(this).addClass("act");
+          slides.fadeOut(250).removeClass("slide-act");
+          slides.eq($(this).index()).fadeIn(250).addClass("slide-act");
+          sliderMakeup();
         }
-      },5000);
+      });
+      
+      listerItems.bind("mouseover",function () {
+        $(this).click();
+      });
+      
+      var play = 1;
+      
+      slider.bind("mouseover",function () {
+        play = 0;
+      });
+      slider.bind("mouseout",function () {
+        play = 1;
+      });
+      
+      if (play) {
+        var t = setInterval(function () {
+          if (play) {
+            if (lister.find(".act").index() < sliderSize-1) {
+              lister.find(".act").next(".item").click();
+            } else {
+              listerItems.eq(0).click();
+            }
+          }
+        },5000);
+      }
     }
-    
   }
 })( jQuery );
 
@@ -457,47 +461,50 @@ $(document).ready(function () {
     slides.hide();
     slides.eq(0).show().addClass("slide-act");
     
-    for (i=1;i<=sliderSize;i++) {
-      lister.append("<div class='item'>" + i + "</div>")
-    }
+    if (sliderSize > 1) {
     
-    var listerItems = lister.children(".item");
-    
-    listerItems.eq(0).addClass("act");
-    
-    
-    listerItems.on("click",function () {
-      if (!$(this).hasClass("act")) {
-        listerItems.removeClass("act");
-        $(this).addClass("act");
-        slides.fadeOut(250).removeClass("slide-act");
-        slides.eq($(this).index()).fadeIn(250).addClass("slide-act");
+      for (i=1;i<=sliderSize;i++) {
+        lister.append("<div class='item'>" + i + "</div>")
       }
-    });
-    
-    listerItems.bind("mouseover",function () {
-      $(this).click();
-    });
-    
-    var play = 1;
-    
-    slider.bind("mouseover",function () {
-      play = 0;
-    });
-    slider.bind("mouseout",function () {
-      play = 1;
-    });
-    
-    if (play) {
-      var t = setInterval(function () {
-        if (play) {
-          if (lister.find(".act").index() < sliderSize-1) {
-            lister.find(".act").next(".item").click();
-          } else {
-            listerItems.eq(0).click();
-          }
+      
+      var listerItems = lister.children(".item");
+      
+      listerItems.eq(0).addClass("act");
+      
+      listerItems.on("click",function () {
+        if (!$(this).hasClass("act")) {
+          listerItems.removeClass("act");
+          $(this).addClass("act");
+          slides.fadeOut(250).removeClass("slide-act");
+          slides.eq($(this).index()).fadeIn(250).addClass("slide-act");
         }
-      },5000);
+      });
+      
+      listerItems.bind("mouseover",function () {
+        $(this).click();
+      });
+      
+      var play = 1;
+      
+      slider.bind("mouseover",function () {
+        play = 0;
+      });
+      slider.bind("mouseout",function () {
+        play = 1;
+      });
+      
+      if (play) {
+        var t = setInterval(function () {
+          if (play) {
+            if (lister.find(".act").index() < sliderSize-1) {
+              lister.find(".act").next(".item").click();
+            } else {
+              listerItems.eq(0).click();
+            }
+          }
+        },5000);
+      }
+      
     }
     
   }
