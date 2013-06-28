@@ -2099,6 +2099,8 @@ ul.params .dt {
   left:8px;
   top:8px;
   color:#788087;
+  z-index:10;
+  font-size:13px;
 }
 
 .common-form .form-text, .common-form .form-textarea {
