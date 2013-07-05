@@ -58,6 +58,18 @@ body, html {
   color:#353a40;
 }
 
+html, body {height: 100%;}
+
+.top-wrap {min-height: 100%;}
+
+.top-main {overflow:auto;
+	padding-bottom: 333px;}  /* must be same height as the footer */
+
+.footer {position: relative;
+	margin-top: -333px; /* negative value of footer height */
+	height: 333px;
+	clear:both;} 
+
 a,
 a:visited {
   color:#468dab;
@@ -167,8 +179,8 @@ h3 {
 
 .wrapper {
   min-width:1020px;
+  min-height:100%;
 }
-
 
 .section-wrapper {
   width:1020px;

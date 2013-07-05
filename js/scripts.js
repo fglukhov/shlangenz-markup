@@ -1,10 +1,5 @@
 ﻿$(window).resize(function () {
   pupMakeup();
-  makeup();
-});
-
-$(window).load(function () {
-  makeup();
 });
 
 $(window).scroll(function () {
@@ -388,8 +383,6 @@ $(document).ready(function () {
     
   });
   
-  makeup();
-  
 });
 
 (function( jQuery ) {
@@ -574,13 +567,4 @@ function formMakeup() {
 function closePopup() {
   $(".tint").remove();
   $(".popup").hide();
-}
-
-function makeup() {
-  $(".body").css("height","auto");
-  if ($(window).height() > $(".wrapper").height()) {
-    $(".body").css("height",$(window).height() - $(".header").outerHeight(true) - $(".footer").outerHeight(true));
-  } else {
-    $(".body").css("height","auto");
-  }
 }
