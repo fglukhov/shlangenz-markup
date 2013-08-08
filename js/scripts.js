@@ -518,7 +518,7 @@ function sliderMakeup() {
 }
 
 function pupMakeup () {
-  $(".tint").css("height",$(".wrapper").height()).css("width",$(".wrapper").width());
+  $(".tint").css("height",$(".top-wrap").height()).css("width",$(".top-wrap").width());
   $(".popup").css("top",$(window).scrollTop() + ($(window).height()-$(".popup").height())/2).css("left",($(window).width()-$(".popup").width())/2 - 20);
 }
 
