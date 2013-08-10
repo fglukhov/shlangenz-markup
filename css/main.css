@@ -635,10 +635,13 @@ h3 {
   padding:0 0 27px 0;
 }
 
-.main-projects .item {
+.main-projects .item,
+.main-projects .item:visited {
   margin:0 20px 0 0;
   float:left;
   cursor:pointer;
+  display:block;
+  text-decoration:none;
 }
 
 .main-rnd-block .cont-wrapper {
@@ -657,6 +660,7 @@ h3 {
 .main-projects .cont-wrapper {
   width:180px;
   height:343px;
+  display:block;
 }
 
 .main-projects .pic {
@@ -664,6 +668,7 @@ h3 {
   width:154px;
   height:100px;
   overflow:hidden;
+  display:block;
 }
 
 .main-projects .pic-mask {
@@ -675,10 +680,12 @@ h3 {
   background-image:url(../images/oval-mask.png);
   background-position:0 0;
   background-repeat:no-repeat;
+  display:block;
 }
 
 .main-projects .cont {
   padding:13px 13px 6px 13px;
+  display:block;
 }
 
 .main-projects .descr {
@@ -689,6 +696,7 @@ h3 {
   overflow:hidden;
   margin:0 0 8px 0;
   position:relative;
+  display:block;
 }
 
 .main-projects .descr .ellipsis {
@@ -701,6 +709,7 @@ h3 {
   height:21px;
   width:17px;
   text-align:right;
+  display:block;
 }
 
 .main-projects .item:hover .ellipsis {
