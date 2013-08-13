@@ -534,11 +534,16 @@ h3 {
   color:#c3dee9;
   float:left;
   overflow:hidden;
+  cursor:pointer;
 }
 
-.main-slider .slide {
+.main-slider .slide,
+.main-slider .slide:visited {
   position:absolute;
   display:none;
+  color:#c3dee9;
+  text-decoration:none;
+  cursor:pointer;
 }
 
 .main-slider .slide-pic {
@@ -550,6 +555,8 @@ h3 {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  display:block;
+  cursor:pointer;
 }
 
 .main-slider .slide-descr {
@@ -561,6 +568,8 @@ h3 {
   padding:28px 32px 24px 32px;
   height:138px;
   overflow:hidden;
+  display:block;
+  cursor:pointer;
 }
 
 .main-slider h2 {
@@ -586,6 +595,7 @@ h3 {
   z-index:21;
   right:19px;
   bottom:20px;
+  display:block;
 }
 
 .main-slider .lister .item {
@@ -602,6 +612,7 @@ h3 {
   text-align:center;
   padding-top:6px;
   cursor:pointer;
+  display:block;
 }
 
 .main-slider .lister .act {
@@ -3451,7 +3462,10 @@ blockquote .author {
   z-index:29 !imporant;
 }
 
-
+.all-link {
+  float:right;
+  padding-top:6px;
+}
 
 
 
